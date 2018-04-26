@@ -1,0 +1,360 @@
+Formatting using clusterid: testClusterID
+2017-09-08 13:46:09,018 (main) [WARN - org.apache.hadoop.metrics2.impl.MetricsConfig.loadFirst(MetricsConfig.java:124)] Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
+2017-09-08 13:46:09,978 (main) [WARN - org.apache.hadoop.security.authentication.server.AuthenticationFilter.init(AuthenticationFilter.java:162)] 'signature.secret' configuration not set, using a random value as secret
+2017-09-08 13:46:13,091 (IPC Server handler 5 on 54269) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-0161a1ad-574e-454d-9089-f1fefe7db436 node DatanodeRegistration(127.0.0.1, datanodeUuid=f4796aa3-9430-4e93-aa69-4942e9cba400, infoPort=54277, ipcPort=54280, storageInfo=lv=-55;cid=testClusterID;nsid=125236496;c=0), blocks: 0, processing time: 1 msecs
+2017-09-08 13:46:13,091 (IPC Server handler 5 on 54269) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-0279756a-7f6c-40d2-8017-f7aa9bb86545 node DatanodeRegistration(127.0.0.1, datanodeUuid=f4796aa3-9430-4e93-aa69-4942e9cba400, infoPort=54277, ipcPort=54280, storageInfo=lv=-55;cid=testClusterID;nsid=125236496;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:13,117 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSTest(TestHDFSEventSinkOnMiniCluster.java:91)] Running test with output dir: /flume/simpleHDFSTest
+2017-09-08 13:46:13,124 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSTest(TestHDFSEventSinkOnMiniCluster.java:100)] Namenode address: hdfs://localhost:54269
+2017-09-08 13:46:13,133 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:119)] Monitored counter group for type: CHANNEL, name: simpleHDFSTest-mem-chan: Successfully registered new MBean.
+2017-09-08 13:46:13,133 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:95)] Component type: CHANNEL, name: simpleHDFSTest-mem-chan started
+2017-09-08 13:46:13,141 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:119)] Monitored counter group for type: SINK, name: simpleHDFSTest-hdfs-sink: Successfully registered new MBean.
+2017-09-08 13:46:13,142 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:95)] Component type: SINK, name: simpleHDFSTest-hdfs-sink started
+2017-09-08 13:46:13,150 (main) [INFO - org.apache.flume.sink.hdfs.HDFSDataStream.configure(HDFSDataStream.java:57)] Serializer = TEXT, UseRawLocalFileSystem = false
+2017-09-08 13:46:13,163 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.open(BucketWriter.java:231)] Creating hdfs://localhost:54269/flume/simpleHDFSTest/FlumeData.1504849573150.tmp
+2017-09-08 13:46:13,245 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-0) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetNumCurrentReplicas(AbstractHDFSWriter.java:200)] Using getNumCurrentReplicas--HDFS-826
+2017-09-08 13:46:13,247 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-0) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetDefaultReplication(AbstractHDFSWriter.java:228)] Using FileSystem.getDefaultReplication(Path) from HADOOP-8014
+2017-09-08 13:46:13,430 (main) [INFO - org.apache.flume.sink.hdfs.HDFSEventSink.stop(HDFSEventSink.java:480)] Closing hdfs://localhost:54269/flume/simpleHDFSTest\FlumeData
+2017-09-08 13:46:13,431 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.close(BucketWriter.java:357)] Closing hdfs://localhost:54269/flume/simpleHDFSTest/FlumeData.1504849573150.tmp
+2017-09-08 13:46:13,441 (IPC Server handler 7 on 54269) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54276 is added to blk_1073741825_1001{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-0279756a-7f6c-40d2-8017-f7aa9bb86545:NORMAL|RBW]]} size 6
+2017-09-08 13:46:13,460 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-4) [INFO - org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:618)] Renaming hdfs://localhost:54269/flume/simpleHDFSTest/FlumeData.1504849573150.tmp to hdfs://localhost:54269/flume/simpleHDFSTest/FlumeData.1504849573150
+2017-09-08 13:46:13,473 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:149)] Component type: SINK, name: simpleHDFSTest-hdfs-sink stopped
+2017-09-08 13:46:13,473 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:155)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.start.time == 1504849573142
+2017-09-08 13:46:13,473 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:161)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.stop.time == 1504849573473
+2017-09-08 13:46:13,474 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.complete == 1
+2017-09-08 13:46:13,474 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.empty == 0
+2017-09-08 13:46:13,474 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.underflow == 0
+2017-09-08 13:46:13,474 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.closed.count == 1
+2017-09-08 13:46:13,474 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.creation.count == 1
+2017-09-08 13:46:13,475 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.failed.count == 0
+2017-09-08 13:46:13,475 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.event.drain.attempt == 1
+2017-09-08 13:46:13,475 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.event.drain.sucess == 1
+2017-09-08 13:46:13,475 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:149)] Component type: CHANNEL, name: simpleHDFSTest-mem-chan stopped
+2017-09-08 13:46:13,475 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:155)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.start.time == 1504849573133
+2017-09-08 13:46:13,475 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:161)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.stop.time == 1504849573475
+2017-09-08 13:46:13,476 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.capacity == 100
+2017-09-08 13:46:13,476 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.current.size == 0
+2017-09-08 13:46:13,476 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.put.attempt == 1
+2017-09-08 13:46:13,476 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.put.success == 1
+2017-09-08 13:46:13,476 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.take.attempt == 1
+2017-09-08 13:46:13,476 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.take.success == 1
+2017-09-08 13:46:13,483 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSTest(TestHDFSEventSinkOnMiniCluster.java:143)] Found file on DFS: hdfs://127.0.0.1:54269/flume/simpleHDFSTest/FlumeData.1504849573150
+2017-09-08 13:46:13,545 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSTest(TestHDFSEventSinkOnMiniCluster.java:147)] First line in file hdfs://127.0.0.1:54269/flume/simpleHDFSTest/FlumeData.1504849573150: yarg!
+2017-09-08 13:46:13,715 (IPC Server handler 4 on 54269) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.addToInvalidates(BlockManager.java:1053)] BLOCK* addToInvalidates: blk_1073741825_1001 127.0.0.1:54276 
+2017-09-08 13:46:13,720 (main) [WARN - org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.shutdown(DirectoryScanner.java:376)] DirectoryScanner: shutdown has been called
+2017-09-08 13:46:13,856 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data1/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data2/]]  heartbeating to /127.0.0.1:54269) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:726)] BPOfferService for Block pool BP-1681953318-192.168.6.122-1504849568471 (Datanode Uuid f4796aa3-9430-4e93-aa69-4942e9cba400) service to /127.0.0.1:54269 interrupted
+2017-09-08 13:46:13,856 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data1/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data2/]]  heartbeating to /127.0.0.1:54269) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:836)] Ending block pool service for: Block pool BP-1681953318-192.168.6.122-1504849568471 (Datanode Uuid f4796aa3-9430-4e93-aa69-4942e9cba400) service to /127.0.0.1:54269
+2017-09-08 13:46:13,912 (org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor@18b0930f) [WARN - org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor.run(DecommissionManager.java:78)] Monitor interrupted: java.lang.InterruptedException: sleep interrupted
+Formatting using clusterid: testClusterID
+2017-09-08 13:46:14,134 (main) [WARN - org.apache.hadoop.metrics2.impl.MetricsConfig.loadFirst(MetricsConfig.java:124)] Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
+2017-09-08 13:46:14,238 (main) [WARN - org.apache.hadoop.security.authentication.server.AuthenticationFilter.init(AuthenticationFilter.java:162)] 'signature.secret' configuration not set, using a random value as secret
+2017-09-08 13:46:14,807 (IPC Server handler 5 on 54300) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-c3943cf8-f60e-485c-8045-e226687c006c node DatanodeRegistration(127.0.0.1, datanodeUuid=953bdff0-e2a1-4db4-802b-e26f462c9115, infoPort=54308, ipcPort=54311, storageInfo=lv=-55;cid=testClusterID;nsid=1851343408;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:14,808 (IPC Server handler 5 on 54300) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-cb01ecae-b0ef-46bf-9844-8d982ef21552 node DatanodeRegistration(127.0.0.1, datanodeUuid=953bdff0-e2a1-4db4-802b-e26f462c9115, infoPort=54308, ipcPort=54311, storageInfo=lv=-55;cid=testClusterID;nsid=1851343408;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:14,827 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSGZipCompressedTest(TestHDFSEventSinkOnMiniCluster.java:170)] Running test with output dir: /flume/simpleHDFSGZipCompressedTest
+2017-09-08 13:46:14,830 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSGZipCompressedTest(TestHDFSEventSinkOnMiniCluster.java:179)] Namenode address: hdfs://localhost:54300
+2017-09-08 13:46:14,830 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:111)] Monitored counter group for type: CHANNEL, name: simpleHDFSTest-mem-chan: Another MBean is already registered with this name. Unregistering that pre-existing MBean now...
+2017-09-08 13:46:14,830 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:115)] Monitored counter group for type: CHANNEL, name: simpleHDFSTest-mem-chan: Successfully unregistered pre-existing MBean.
+2017-09-08 13:46:14,830 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:119)] Monitored counter group for type: CHANNEL, name: simpleHDFSTest-mem-chan: Successfully registered new MBean.
+2017-09-08 13:46:14,830 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:95)] Component type: CHANNEL, name: simpleHDFSTest-mem-chan started
+2017-09-08 13:46:14,845 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:111)] Monitored counter group for type: SINK, name: simpleHDFSTest-hdfs-sink: Another MBean is already registered with this name. Unregistering that pre-existing MBean now...
+2017-09-08 13:46:14,845 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:115)] Monitored counter group for type: SINK, name: simpleHDFSTest-hdfs-sink: Successfully unregistered pre-existing MBean.
+2017-09-08 13:46:14,845 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:119)] Monitored counter group for type: SINK, name: simpleHDFSTest-hdfs-sink: Successfully registered new MBean.
+2017-09-08 13:46:14,846 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:95)] Component type: SINK, name: simpleHDFSTest-hdfs-sink started
+2017-09-08 13:46:14,846 (main) [INFO - org.apache.flume.sink.hdfs.HDFSCompressedDataStream.configure(HDFSCompressedDataStream.java:64)] Serializer = TEXT, UseRawLocalFileSystem = false
+2017-09-08 13:46:14,855 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.open(BucketWriter.java:231)] Creating hdfs://localhost:54300/flume/simpleHDFSGZipCompressedTest/FlumeData.1504849574847.gz.tmp
+2017-09-08 13:46:14,879 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-0) [WARN - org.apache.hadoop.io.compress.zlib.ZlibFactory.<clinit>(ZlibFactory.java:51)] Failed to load/initialize native-zlib library
+2017-09-08 13:46:14,880 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-0) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetNumCurrentReplicas(AbstractHDFSWriter.java:200)] Using getNumCurrentReplicas--HDFS-826
+2017-09-08 13:46:14,881 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-0) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetDefaultReplication(AbstractHDFSWriter.java:228)] Using FileSystem.getDefaultReplication(Path) from HADOOP-8014
+2017-09-08 13:46:14,907 (main) [INFO - org.apache.flume.sink.hdfs.HDFSEventSink.stop(HDFSEventSink.java:480)] Closing hdfs://localhost:54300/flume/simpleHDFSGZipCompressedTest\FlumeData
+2017-09-08 13:46:14,908 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.close(BucketWriter.java:357)] Closing hdfs://localhost:54300/flume/simpleHDFSGZipCompressedTest/FlumeData.1504849574847.gz.tmp
+2017-09-08 13:46:14,913 (IPC Server handler 4 on 54300) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54307 is added to blk_1073741825_1001{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-c3943cf8-f60e-485c-8045-e226687c006c:NORMAL|RBW]]} size 26
+2017-09-08 13:46:14,923 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-4) [INFO - org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:618)] Renaming hdfs://localhost:54300/flume/simpleHDFSGZipCompressedTest/FlumeData.1504849574847.gz.tmp to hdfs://localhost:54300/flume/simpleHDFSGZipCompressedTest/FlumeData.1504849574847.gz
+2017-09-08 13:46:14,931 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:149)] Component type: SINK, name: simpleHDFSTest-hdfs-sink stopped
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:155)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.start.time == 1504849574846
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:161)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.stop.time == 1504849574931
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.complete == 1
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.empty == 0
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.underflow == 0
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.closed.count == 1
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.creation.count == 1
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.failed.count == 0
+2017-09-08 13:46:14,932 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.event.drain.attempt == 1
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.event.drain.sucess == 1
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:149)] Component type: CHANNEL, name: simpleHDFSTest-mem-chan stopped
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:155)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.start.time == 1504849574830
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:161)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.stop.time == 1504849574933
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.capacity == 100
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.current.size == 1
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.put.attempt == 2
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.put.success == 2
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.take.attempt == 1
+2017-09-08 13:46:14,933 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.take.success == 1
+2017-09-08 13:46:14,935 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSGZipCompressedTest(TestHDFSEventSinkOnMiniCluster.java:225)] Found file on DFS: hdfs://127.0.0.1:54300/flume/simpleHDFSGZipCompressedTest/FlumeData.1504849574847.gz
+2017-09-08 13:46:14,945 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.simpleHDFSGZipCompressedTest(TestHDFSEventSinkOnMiniCluster.java:230)] First line in file hdfs://127.0.0.1:54300/flume/simpleHDFSGZipCompressedTest/FlumeData.1504849574847.gz: yarg1
+2017-09-08 13:46:14,952 (IPC Server handler 2 on 54300) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.addToInvalidates(BlockManager.java:1053)] BLOCK* addToInvalidates: blk_1073741825_1001 127.0.0.1:54307 
+2017-09-08 13:46:14,953 (main) [WARN - org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.shutdown(DirectoryScanner.java:376)] DirectoryScanner: shutdown has been called
+2017-09-08 13:46:15,066 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data1/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data2/]]  heartbeating to /127.0.0.1:54300) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:726)] BPOfferService for Block pool BP-1183553757-192.168.6.122-1504849574073 (Datanode Uuid 953bdff0-e2a1-4db4-802b-e26f462c9115) service to /127.0.0.1:54300 interrupted
+2017-09-08 13:46:15,066 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data1/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data2/]]  heartbeating to /127.0.0.1:54300) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:836)] Ending block pool service for: Block pool BP-1183553757-192.168.6.122-1504849574073 (Datanode Uuid 953bdff0-e2a1-4db4-802b-e26f462c9115) service to /127.0.0.1:54300
+2017-09-08 13:46:15,128 (org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor@7d0332e1) [WARN - org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor.run(DecommissionManager.java:78)] Monitor interrupted: java.lang.InterruptedException: sleep interrupted
+Formatting using clusterid: testClusterID
+2017-09-08 13:46:15,339 (main) [WARN - org.apache.hadoop.metrics2.impl.MetricsConfig.loadFirst(MetricsConfig.java:124)] Cannot locate configuration: tried hadoop-metrics2-namenode.properties,hadoop-metrics2.properties
+2017-09-08 13:46:15,455 (main) [WARN - org.apache.hadoop.security.authentication.server.AuthenticationFilter.init(AuthenticationFilter.java:162)] 'signature.secret' configuration not set, using a random value as secret
+2017-09-08 13:46:15,919 (IPC Server handler 3 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-94733326-b486-4ed5-8f23-902e64be209f node DatanodeRegistration(127.0.0.1, datanodeUuid=07f207a1-a8ea-47f1-ab4f-e8473ccd2116, infoPort=54333, ipcPort=54336, storageInfo=lv=-55;cid=testClusterID;nsid=615584459;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:15,919 (IPC Server handler 3 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-2ac0bc5c-c8b4-4884-b629-2b11baf78b5d node DatanodeRegistration(127.0.0.1, datanodeUuid=07f207a1-a8ea-47f1-ab4f-e8473ccd2116, infoPort=54333, ipcPort=54336, storageInfo=lv=-55;cid=testClusterID;nsid=615584459;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:16,101 (IPC Server handler 7 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-c1338375-f0c9-4376-8d0e-bab25155bdef node DatanodeRegistration(127.0.0.1, datanodeUuid=9b2b004a-00e1-47b5-85ef-d7cf828804e8, infoPort=54345, ipcPort=54348, storageInfo=lv=-55;cid=testClusterID;nsid=615584459;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:16,102 (IPC Server handler 7 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-259d4aab-d3e3-4607-98ce-dd7007274976 node DatanodeRegistration(127.0.0.1, datanodeUuid=9b2b004a-00e1-47b5-85ef-d7cf828804e8, infoPort=54345, ipcPort=54348, storageInfo=lv=-55;cid=testClusterID;nsid=615584459;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:16,326 (IPC Server handler 3 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-3beb00d3-6ca9-4176-9ddd-ca4813c10913 node DatanodeRegistration(127.0.0.1, datanodeUuid=758d8d4e-f7e1-4daa-ae59-ce5e371a5fb8, infoPort=54356, ipcPort=54359, storageInfo=lv=-55;cid=testClusterID;nsid=615584459;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:16,326 (IPC Server handler 3 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.processReport(BlockManager.java:1712)] BLOCK* processReport: from storage DS-af2c2a1b-e5f6-4026-8c2e-9258146c0a92 node DatanodeRegistration(127.0.0.1, datanodeUuid=758d8d4e-f7e1-4daa-ae59-ce5e371a5fb8, infoPort=54356, ipcPort=54359, storageInfo=lv=-55;cid=testClusterID;nsid=615584459;c=0), blocks: 0, processing time: 0 msecs
+2017-09-08 13:46:16,425 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:270)] Running test with output dir: /flume/underReplicationTest
+2017-09-08 13:46:16,427 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:279)] Namenode address: hdfs://localhost:54325
+2017-09-08 13:46:16,427 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:111)] Monitored counter group for type: CHANNEL, name: simpleHDFSTest-mem-chan: Another MBean is already registered with this name. Unregistering that pre-existing MBean now...
+2017-09-08 13:46:16,427 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:115)] Monitored counter group for type: CHANNEL, name: simpleHDFSTest-mem-chan: Successfully unregistered pre-existing MBean.
+2017-09-08 13:46:16,427 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:119)] Monitored counter group for type: CHANNEL, name: simpleHDFSTest-mem-chan: Successfully registered new MBean.
+2017-09-08 13:46:16,427 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:95)] Component type: CHANNEL, name: simpleHDFSTest-mem-chan started
+2017-09-08 13:46:16,428 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:111)] Monitored counter group for type: SINK, name: simpleHDFSTest-hdfs-sink: Another MBean is already registered with this name. Unregistering that pre-existing MBean now...
+2017-09-08 13:46:16,428 (main) [DEBUG - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:115)] Monitored counter group for type: SINK, name: simpleHDFSTest-hdfs-sink: Successfully unregistered pre-existing MBean.
+2017-09-08 13:46:16,428 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.register(MonitoredCounterGroup.java:119)] Monitored counter group for type: SINK, name: simpleHDFSTest-hdfs-sink: Successfully registered new MBean.
+2017-09-08 13:46:16,428 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.start(MonitoredCounterGroup.java:95)] Component type: SINK, name: simpleHDFSTest-hdfs-sink started
+2017-09-08 13:46:16,428 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:313)] Running process(). Create new file.
+2017-09-08 13:46:16,428 (main) [INFO - org.apache.flume.sink.hdfs.HDFSDataStream.configure(HDFSDataStream.java:57)] Serializer = TEXT, UseRawLocalFileSystem = false
+2017-09-08 13:46:16,436 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.open(BucketWriter.java:231)] Creating hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576429.tmp
+2017-09-08 13:46:16,464 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-0) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetNumCurrentReplicas(AbstractHDFSWriter.java:200)] Using getNumCurrentReplicas--HDFS-826
+2017-09-08 13:46:16,464 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-0) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetDefaultReplication(AbstractHDFSWriter.java:228)] Using FileSystem.getDefaultReplication(Path) from HADOOP-8014
+2017-09-08 13:46:16,521 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:315)] Running process(). Same file.
+2017-09-08 13:46:16,524 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:319)] Killing datanode #1...
+2017-09-08 13:46:16,525 (main) [WARN - org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.shutdown(DirectoryScanner.java:376)] DirectoryScanner: shutdown has been called
+2017-09-08 13:46:16,526 (ResponseProcessor for block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001) [WARN - org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer$ResponseProcessor.run(DFSOutputStream.java:874)] DFSOutputStream ResponseProcessor exception  for block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001
+java.io.EOFException: Premature EOF: no length prefix available
+	at org.apache.hadoop.hdfs.protocolPB.PBHelper.vintPrefixed(PBHelper.java:1987)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PipelineAck.readFields(PipelineAck.java:176)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer$ResponseProcessor.run(DFSOutputStream.java:796)
+2017-09-08 13:46:16,530 (DataStreamer for file /flume/underReplicationTest/FlumeData.1504849576429.tmp block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001) [WARN - org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.setupPipelineForAppendOrRecovery(DFSOutputStream.java:1133)] Error Recovery for block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001 in pipeline 127.0.0.1:54332, 127.0.0.1:54355, 127.0.0.1:54344: bad datanode 127.0.0.1:54332
+2017-09-08 13:46:16,531 (DataXceiver for client DFSClient_NONMAPREDUCE_-1275935934_301 at /127.0.0.1:54367 [Receiving block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001]) [ERROR - org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:250)] 127.0.0.1:54332:DataXceiver error processing WRITE_BLOCK operation  src: /127.0.0.1:54367 dst: /127.0.0.1:54332
+java.nio.channels.ClosedChannelException
+	at java.nio.channels.spi.AbstractSelectableChannel.register(AbstractSelectableChannel.java:197)
+	at java.nio.channels.SelectableChannel.register(SelectableChannel.java:280)
+	at org.apache.hadoop.net.SocketIOWithTimeout$SelectorPool.select(SocketIOWithTimeout.java:334)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:157)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:161)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:131)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:286)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:345)
+	at java.io.DataInputStream.read(DataInputStream.java:149)
+	at org.apache.hadoop.io.IOUtils.readFully(IOUtils.java:192)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.doReadFully(PacketReceiver.java:213)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.doRead(PacketReceiver.java:134)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.receiveNextPacket(PacketReceiver.java:109)
+	at org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receivePacket(BlockReceiver.java:446)
+	at org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receiveBlock(BlockReceiver.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.writeBlock(DataXceiver.java:739)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.opWriteBlock(Receiver.java:124)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.processOp(Receiver.java:71)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:232)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-08 13:46:16,533 (DataXceiver for client DFSClient_NONMAPREDUCE_-1275935934_301 at /127.0.0.1:54368 [Receiving block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001]) [ERROR - org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:250)] 127.0.0.1:54355:DataXceiver error processing WRITE_BLOCK operation  src: /127.0.0.1:54368 dst: /127.0.0.1:54355
+java.io.IOException: Premature EOF from inputStream
+	at org.apache.hadoop.io.IOUtils.readFully(IOUtils.java:194)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.doReadFully(PacketReceiver.java:213)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.doRead(PacketReceiver.java:134)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.receiveNextPacket(PacketReceiver.java:109)
+	at org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receivePacket(BlockReceiver.java:446)
+	at org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receiveBlock(BlockReceiver.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.writeBlock(DataXceiver.java:739)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.opWriteBlock(Receiver.java:124)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.processOp(Receiver.java:71)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:232)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-08 13:46:16,534 (DataXceiver for client DFSClient_NONMAPREDUCE_-1275935934_301 at /127.0.0.1:54369 [Receiving block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001]) [ERROR - org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:250)] 127.0.0.1:54344:DataXceiver error processing WRITE_BLOCK operation  src: /127.0.0.1:54369 dst: /127.0.0.1:54344
+java.io.IOException: Premature EOF from inputStream
+	at org.apache.hadoop.io.IOUtils.readFully(IOUtils.java:194)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.doReadFully(PacketReceiver.java:213)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.doRead(PacketReceiver.java:134)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.PacketReceiver.receiveNextPacket(PacketReceiver.java:109)
+	at org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receivePacket(BlockReceiver.java:446)
+	at org.apache.hadoop.hdfs.server.datanode.BlockReceiver.receiveBlock(BlockReceiver.java:702)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.writeBlock(DataXceiver.java:739)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.opWriteBlock(Receiver.java:124)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.processOp(Receiver.java:71)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:232)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-08 13:46:16,536 (IPC Server handler 4 on 54325) [WARN - org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseTarget(BlockPlacementPolicyDefault.java:309)] Failed to place enough replicas, still in need of 1 to reach 3. For more information, please enable DEBUG log level on org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy
+2017-09-08 13:46:16,539 (DataStreamer for file /flume/underReplicationTest/FlumeData.1504849576429.tmp block BP-397119027-192.168.6.122-1504849575276:blk_1073741825_1001) [WARN - org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:627)] DataStreamer Exception
+java.io.IOException: Failed to replace a bad datanode on the existing pipeline due to no more good datanodes being available to try. (Nodes: current=[127.0.0.1:54355, 127.0.0.1:54344], original=[127.0.0.1:54355, 127.0.0.1:54344]). The current failed datanode replacement policy is DEFAULT, and a client may configure this via 'dfs.client.block.write.replace-datanode-on-failure.policy' in its configuration.
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.findNewDatanode(DFSOutputStream.java:960)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.addDatanode2ExistingPipeline(DFSOutputStream.java:1026)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.setupPipelineForAppendOrRecovery(DFSOutputStream.java:1175)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.processDatanodeError(DFSOutputStream.java:924)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:486)
+2017-09-08 13:46:16,639 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data1/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data2/]]  heartbeating to /127.0.0.1:54325) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:726)] BPOfferService for Block pool BP-397119027-192.168.6.122-1504849575276 (Datanode Uuid 07f207a1-a8ea-47f1-ab4f-e8473ccd2116) service to /127.0.0.1:54325 interrupted
+2017-09-08 13:46:16,639 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data1/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data2/]]  heartbeating to /127.0.0.1:54325) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:836)] Ending block pool service for: Block pool BP-397119027-192.168.6.122-1504849575276 (Datanode Uuid 07f207a1-a8ea-47f1-ab4f-e8473ccd2116) service to /127.0.0.1:54325
+2017-09-08 13:46:16,645 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:326)] Running process(). Create new file? (racy)
+2017-09-08 13:46:16,645 (main) [ERROR - org.apache.flume.sink.hdfs.AbstractHDFSWriter.isUnderReplicated(AbstractHDFSWriter.java:99)] Unexpected error while checking replication factor
+java.lang.reflect.InvocationTargetException
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.flume.sink.hdfs.AbstractHDFSWriter.getNumCurrentReplicas(AbstractHDFSWriter.java:166)
+	at org.apache.flume.sink.hdfs.AbstractHDFSWriter.isUnderReplicated(AbstractHDFSWriter.java:85)
+	at org.apache.flume.sink.hdfs.BucketWriter.shouldRotate(BucketWriter.java:573)
+	at org.apache.flume.sink.hdfs.BucketWriter.append(BucketWriter.java:508)
+	at org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:406)
+	at org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:327)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:45)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:15)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:42)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:20)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:263)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:68)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:47)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:231)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:60)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:50)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:222)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:28)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:30)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:300)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.io.IOException: Failed to replace a bad datanode on the existing pipeline due to no more good datanodes being available to try. (Nodes: current=[127.0.0.1:54355, 127.0.0.1:54344], original=[127.0.0.1:54355, 127.0.0.1:54344]). The current failed datanode replacement policy is DEFAULT, and a client may configure this via 'dfs.client.block.write.replace-datanode-on-failure.policy' in its configuration.
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.findNewDatanode(DFSOutputStream.java:960)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.addDatanode2ExistingPipeline(DFSOutputStream.java:1026)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.setupPipelineForAppendOrRecovery(DFSOutputStream.java:1175)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.processDatanodeError(DFSOutputStream.java:924)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:486)
+2017-09-08 13:46:16,646 (main) [WARN - org.apache.flume.sink.hdfs.BucketWriter.append(BucketWriter.java:545)] Caught IOException writing to HDFSWriter (Failed to replace a bad datanode on the existing pipeline due to no more good datanodes being available to try. (Nodes: current=[127.0.0.1:54355, 127.0.0.1:54344], original=[127.0.0.1:54355, 127.0.0.1:54344]). The current failed datanode replacement policy is DEFAULT, and a client may configure this via 'dfs.client.block.write.replace-datanode-on-failure.policy' in its configuration.). Closing file (hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576429.tmp) and rethrowing exception.
+2017-09-08 13:46:16,647 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.close(BucketWriter.java:357)] Closing hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576429.tmp
+2017-09-08 13:46:16,647 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-6) [ERROR - org.apache.flume.sink.hdfs.AbstractHDFSWriter.hflushOrSync(AbstractHDFSWriter.java:268)] Error while trying to hflushOrSync!
+2017-09-08 13:46:16,647 (main) [WARN - org.apache.flume.sink.hdfs.BucketWriter.close(BucketWriter.java:364)] failed to close() HDFSWriter for file (hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576429.tmp). Exception follows.
+java.io.IOException: Failed to replace a bad datanode on the existing pipeline due to no more good datanodes being available to try. (Nodes: current=[127.0.0.1:54355, 127.0.0.1:54344], original=[127.0.0.1:54355, 127.0.0.1:54344]). The current failed datanode replacement policy is DEFAULT, and a client may configure this via 'dfs.client.block.write.replace-datanode-on-failure.policy' in its configuration.
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.findNewDatanode(DFSOutputStream.java:960)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.addDatanode2ExistingPipeline(DFSOutputStream.java:1026)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.setupPipelineForAppendOrRecovery(DFSOutputStream.java:1175)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.processDatanodeError(DFSOutputStream.java:924)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:486)
+2017-09-08 13:46:16,650 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-7) [INFO - org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:618)] Renaming hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576429.tmp to hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576429
+2017-09-08 13:46:16,657 (main) [INFO - org.apache.flume.sink.hdfs.HDFSEventSink$1.run(HDFSEventSink.java:382)] Writer callback called.
+2017-09-08 13:46:16,657 (main) [WARN - org.apache.flume.sink.hdfs.HDFSEventSink.process(HDFSEventSink.java:443)] HDFS IO error
+java.io.IOException: Failed to replace a bad datanode on the existing pipeline due to no more good datanodes being available to try. (Nodes: current=[127.0.0.1:54355, 127.0.0.1:54344], original=[127.0.0.1:54355, 127.0.0.1:54344]). The current failed datanode replacement policy is DEFAULT, and a client may configure this via 'dfs.client.block.write.replace-datanode-on-failure.policy' in its configuration.
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.findNewDatanode(DFSOutputStream.java:960)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.addDatanode2ExistingPipeline(DFSOutputStream.java:1026)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.setupPipelineForAppendOrRecovery(DFSOutputStream.java:1175)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.processDatanodeError(DFSOutputStream.java:924)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:486)
+2017-09-08 13:46:16,657 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:329)] Running process(). Create new file.
+2017-09-08 13:46:16,658 (main) [INFO - org.apache.flume.sink.hdfs.HDFSDataStream.configure(HDFSDataStream.java:57)] Serializer = TEXT, UseRawLocalFileSystem = false
+2017-09-08 13:46:16,669 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.open(BucketWriter.java:231)] Creating hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576659.tmp
+2017-09-08 13:46:16,687 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-8) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetNumCurrentReplicas(AbstractHDFSWriter.java:200)] Using getNumCurrentReplicas--HDFS-826
+2017-09-08 13:46:16,687 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-8) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetDefaultReplication(AbstractHDFSWriter.java:228)] Using FileSystem.getDefaultReplication(Path) from HADOOP-8014
+2017-09-08 13:46:17,717 (IPC Server handler 1 on 54325) [WARN - org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseTarget(BlockPlacementPolicyDefault.java:309)] Failed to place enough replicas, still in need of 1 to reach 3. For more information, please enable DEBUG log level on org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy
+2017-09-08 13:46:17,753 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:332)] Running process(). Create new file.
+2017-09-08 13:46:17,753 (main) [WARN - org.apache.flume.sink.hdfs.BucketWriter.append(BucketWriter.java:521)] Block Under-replication detected. Rotating file.
+2017-09-08 13:46:17,753 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.close(BucketWriter.java:357)] Closing hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576659.tmp
+2017-09-08 13:46:17,759 (IPC Server handler 4 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54344 is added to blk_1073741827_1003{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-259d4aab-d3e3-4607-98ce-dd7007274976:NORMAL|RBW], ReplicaUnderConstruction[[DISK]DS-af2c2a1b-e5f6-4026-8c2e-9258146c0a92:NORMAL|RBW]]} size 7
+2017-09-08 13:46:17,762 (IPC Server handler 5 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54355 is added to blk_1073741827_1003{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-259d4aab-d3e3-4607-98ce-dd7007274976:NORMAL|RBW], ReplicaUnderConstruction[[DISK]DS-af2c2a1b-e5f6-4026-8c2e-9258146c0a92:NORMAL|RBW]]} size 7
+2017-09-08 13:46:17,772 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-2) [INFO - org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:618)] Renaming hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576659.tmp to hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576659
+2017-09-08 13:46:17,789 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.open(BucketWriter.java:231)] Creating hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576660.tmp
+2017-09-08 13:46:17,808 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-3) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetNumCurrentReplicas(AbstractHDFSWriter.java:200)] Using getNumCurrentReplicas--HDFS-826
+2017-09-08 13:46:17,808 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-3) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetDefaultReplication(AbstractHDFSWriter.java:228)] Using FileSystem.getDefaultReplication(Path) from HADOOP-8014
+2017-09-08 13:46:18,571 (org.apache.hadoop.hdfs.server.blockmanagement.BlockManager$ReplicationMonitor@c446b14) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.computeReplicationWorkForBlocks(BlockManager.java:1397)] BLOCK* ask 127.0.0.1:54344 to replicate blk_1073741827_1003 to datanode(s) 127.0.0.1:54332
+2017-09-08 13:46:18,835 (IPC Server handler 2 on 54325) [WARN - org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseTarget(BlockPlacementPolicyDefault.java:309)] Failed to place enough replicas, still in need of 1 to reach 3. For more information, please enable DEBUG log level on org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy
+2017-09-08 13:46:18,895 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:335)] Running process(). Create new file.
+2017-09-08 13:46:18,895 (main) [WARN - org.apache.flume.sink.hdfs.BucketWriter.append(BucketWriter.java:521)] Block Under-replication detected. Rotating file.
+2017-09-08 13:46:18,896 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.close(BucketWriter.java:357)] Closing hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576660.tmp
+2017-09-08 13:46:18,911 (IPC Server handler 6 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54355 is added to blk_1073741829_1005{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-3beb00d3-6ca9-4176-9ddd-ca4813c10913:NORMAL|RBW], ReplicaUnderConstruction[[DISK]DS-c1338375-f0c9-4376-8d0e-bab25155bdef:NORMAL|RBW]]} size 7
+2017-09-08 13:46:18,920 (IPC Server handler 7 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54344 is added to blk_1073741829_1005{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-3beb00d3-6ca9-4176-9ddd-ca4813c10913:NORMAL|RBW], ReplicaUnderConstruction[[DISK]DS-c1338375-f0c9-4376-8d0e-bab25155bdef:NORMAL|RBW]]} size 7
+2017-09-08 13:46:18,932 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-7) [INFO - org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:618)] Renaming hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576660.tmp to hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576660
+2017-09-08 13:46:18,967 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.open(BucketWriter.java:231)] Creating hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576661.tmp
+2017-09-08 13:46:18,995 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-8) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetNumCurrentReplicas(AbstractHDFSWriter.java:200)] Using getNumCurrentReplicas--HDFS-826
+2017-09-08 13:46:18,995 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-8) [DEBUG - org.apache.flume.sink.hdfs.AbstractHDFSWriter.reflectGetDefaultReplication(AbstractHDFSWriter.java:228)] Using FileSystem.getDefaultReplication(Path) from HADOOP-8014
+2017-09-08 13:46:20,018 (DataXceiver for client DFSClient_NONMAPREDUCE_-1275935934_301 at /127.0.0.1:54384 [Receiving block BP-397119027-192.168.6.122-1504849575276:blk_1073741830_1006]) [ERROR - org.apache.hadoop.hdfs.server.datanode.DataXceiver.writeBlock(DataXceiver.java:710)] DataNode{data=FSDataset{dirpath='[E:\IDEARFILE\apache-flume-1.7.0-src\flume-ng-sinks\flume-hdfs-sink\target\test\dfs\dfs\data\data3\current, E:\IDEARFILE\apache-flume-1.7.0-src\flume-ng-sinks\flume-hdfs-sink\target\test\dfs\dfs\data\data4\current]'}, localName='127.0.0.1:54344', datanodeUuid='9b2b004a-00e1-47b5-85ef-d7cf828804e8', xmitsInProgress=1}:Exception transfering block BP-397119027-192.168.6.122-1504849575276:blk_1073741830_1006 to mirror 127.0.0.1:54332: java.net.ConnectException: Connection refused: no further information
+2017-09-08 13:46:20,019 (DataXceiver for client DFSClient_NONMAPREDUCE_-1275935934_301 at /127.0.0.1:54384 [Receiving block BP-397119027-192.168.6.122-1504849575276:blk_1073741830_1006]) [ERROR - org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:250)] 127.0.0.1:54344:DataXceiver error processing WRITE_BLOCK operation  src: /127.0.0.1:54384 dst: /127.0.0.1:54344
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.writeBlock(DataXceiver.java:650)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.opWriteBlock(Receiver.java:124)
+	at org.apache.hadoop.hdfs.protocol.datatransfer.Receiver.processOp(Receiver.java:71)
+	at org.apache.hadoop.hdfs.server.datanode.DataXceiver.run(DataXceiver.java:232)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-08 13:46:20,039 (IPC Server handler 5 on 54325) [WARN - org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicyDefault.chooseTarget(BlockPlacementPolicyDefault.java:309)] Failed to place enough replicas, still in need of 1 to reach 3. For more information, please enable DEBUG log level on org.apache.hadoop.hdfs.server.blockmanagement.BlockPlacementPolicy
+2017-09-08 13:46:20,079 (main) [INFO - org.apache.flume.sink.hdfs.HDFSEventSink.stop(HDFSEventSink.java:480)] Closing hdfs://localhost:54325/flume/underReplicationTest\FlumeData
+2017-09-08 13:46:20,079 (main) [INFO - org.apache.flume.sink.hdfs.BucketWriter.close(BucketWriter.java:357)] Closing hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576661.tmp
+2017-09-08 13:46:20,088 (IPC Server handler 8 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54355 is added to blk_1073741831_1007{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-c1338375-f0c9-4376-8d0e-bab25155bdef:NORMAL|RBW], ReplicaUnderConstruction[[DISK]DS-af2c2a1b-e5f6-4026-8c2e-9258146c0a92:NORMAL|RBW]]} size 7
+2017-09-08 13:46:20,091 (IPC Server handler 1 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.logAddStoredBlock(BlockManager.java:2339)] BLOCK* addStoredBlock: blockMap updated: 127.0.0.1:54344 is added to blk_1073741831_1007{blockUCState=UNDER_CONSTRUCTION, primaryNodeIndex=-1, replicas=[ReplicaUnderConstruction[[DISK]DS-c1338375-f0c9-4376-8d0e-bab25155bdef:NORMAL|RBW], ReplicaUnderConstruction[[DISK]DS-af2c2a1b-e5f6-4026-8c2e-9258146c0a92:NORMAL|RBW]]} size 7
+2017-09-08 13:46:20,099 (hdfs-simpleHDFSTest-hdfs-sink-call-runner-2) [INFO - org.apache.flume.sink.hdfs.BucketWriter$8.call(BucketWriter.java:618)] Renaming hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576661.tmp to hdfs://localhost:54325/flume/underReplicationTest/FlumeData.1504849576661
+2017-09-08 13:46:20,107 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:149)] Component type: SINK, name: simpleHDFSTest-hdfs-sink stopped
+2017-09-08 13:46:20,108 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:155)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.start.time == 1504849576428
+2017-09-08 13:46:20,108 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:161)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.stop.time == 1504849580107
+2017-09-08 13:46:20,108 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.complete == 5
+2017-09-08 13:46:20,108 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.empty == 0
+2017-09-08 13:46:20,108 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.batch.underflow == 0
+2017-09-08 13:46:20,109 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.closed.count == 3
+2017-09-08 13:46:20,109 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.creation.count == 4
+2017-09-08 13:46:20,109 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.connection.failed.count == 3
+2017-09-08 13:46:20,109 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.event.drain.attempt == 6
+2017-09-08 13:46:20,109 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: SINK, name: simpleHDFSTest-hdfs-sink. sink.event.drain.sucess == 5
+2017-09-08 13:46:20,109 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:149)] Component type: CHANNEL, name: simpleHDFSTest-mem-chan stopped
+2017-09-08 13:46:20,110 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:155)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.start.time == 1504849576427
+2017-09-08 13:46:20,110 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:161)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.stop.time == 1504849580109
+2017-09-08 13:46:20,110 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.capacity == 100
+2017-09-08 13:46:20,110 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.current.size == 1
+2017-09-08 13:46:20,110 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.put.attempt == 6
+2017-09-08 13:46:20,110 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.put.success == 6
+2017-09-08 13:46:20,111 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.take.attempt == 6
+2017-09-08 13:46:20,111 (main) [INFO - org.apache.flume.instrumentation.MonitoredCounterGroup.stop(MonitoredCounterGroup.java:177)] Shutdown Metric for type: CHANNEL, name: simpleHDFSTest-mem-chan. channel.event.take.success == 5
+2017-09-08 13:46:20,113 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:348)] Found file on DFS: hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576429
+2017-09-08 13:46:20,142 (org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer@46ade805) [WARN - org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer.run(DataNode.java:1675)] DatanodeRegistration(127.0.0.1, datanodeUuid=9b2b004a-00e1-47b5-85ef-d7cf828804e8, infoPort=54345, ipcPort=54348, storageInfo=lv=-55;cid=testClusterID;nsid=615584459;c=0):Failed to transfer BP-397119027-192.168.6.122-1504849575276:blk_1073741827_1003 to 127.0.0.1:54332 got 
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer.run(DataNode.java:1612)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-08 13:46:20,142 (org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer@46ade805) [WARN - org.apache.hadoop.hdfs.server.datanode.DataNode.checkDiskError(DataNode.java:1334)] checkDiskError: exception: 
+java.net.ConnectException: Connection refused: no further information
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at org.apache.hadoop.net.SocketIOWithTimeout.connect(SocketIOWithTimeout.java:206)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:529)
+	at org.apache.hadoop.net.NetUtils.connect(NetUtils.java:493)
+	at org.apache.hadoop.hdfs.server.datanode.DataNode$DataTransfer.run(DataNode.java:1612)
+	at java.lang.Thread.run(Thread.java:745)
+2017-09-08 13:46:20,200 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:352)] First line in file hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576429: yarg 1
+2017-09-08 13:46:20,200 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:348)] Found file on DFS: hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576659
+2017-09-08 13:46:20,208 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:352)] First line in file hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576659: yarg 3
+2017-09-08 13:46:20,208 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:348)] Found file on DFS: hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576660
+2017-09-08 13:46:20,215 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:352)] First line in file hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576660: yarg 4
+2017-09-08 13:46:20,215 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:348)] Found file on DFS: hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576661
+2017-09-08 13:46:20,222 (main) [INFO - org.apache.flume.sink.hdfs.TestHDFSEventSinkOnMiniCluster.underReplicationTest(TestHDFSEventSinkOnMiniCluster.java:352)] First line in file hdfs://127.0.0.1:54325/flume/underReplicationTest/FlumeData.1504849576661: yarg 5
+There are 4 files.
+2017-09-08 13:46:20,229 (IPC Server handler 1 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.addToInvalidates(BlockManager.java:1053)] BLOCK* addToInvalidates: blk_1073741827_1003 127.0.0.1:54355 127.0.0.1:54344 
+2017-09-08 13:46:20,229 (IPC Server handler 1 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.addToInvalidates(BlockManager.java:1053)] BLOCK* addToInvalidates: blk_1073741829_1005 127.0.0.1:54344 127.0.0.1:54355 
+2017-09-08 13:46:20,229 (IPC Server handler 1 on 54325) [INFO - org.apache.hadoop.hdfs.server.blockmanagement.BlockManager.addToInvalidates(BlockManager.java:1053)] BLOCK* addToInvalidates: blk_1073741831_1007 127.0.0.1:54344 127.0.0.1:54355 
+2017-09-08 13:46:20,230 (main) [WARN - org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.shutdown(DirectoryScanner.java:376)] DirectoryScanner: shutdown has been called
+2017-09-08 13:46:20,342 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data5/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data6/]]  heartbeating to /127.0.0.1:54325) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:726)] BPOfferService for Block pool BP-397119027-192.168.6.122-1504849575276 (Datanode Uuid 758d8d4e-f7e1-4daa-ae59-ce5e371a5fb8) service to /127.0.0.1:54325 interrupted
+2017-09-08 13:46:20,342 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data5/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data6/]]  heartbeating to /127.0.0.1:54325) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:836)] Ending block pool service for: Block pool BP-397119027-192.168.6.122-1504849575276 (Datanode Uuid 758d8d4e-f7e1-4daa-ae59-ce5e371a5fb8) service to /127.0.0.1:54325
+2017-09-08 13:46:20,346 (main) [WARN - org.apache.hadoop.hdfs.server.datanode.DirectoryScanner.shutdown(DirectoryScanner.java:376)] DirectoryScanner: shutdown has been called
+2017-09-08 13:46:20,460 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data3/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data4/]]  heartbeating to /127.0.0.1:54325) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.offerService(BPServiceActor.java:726)] BPOfferService for Block pool BP-397119027-192.168.6.122-1504849575276 (Datanode Uuid 9b2b004a-00e1-47b5-85ef-d7cf828804e8) service to /127.0.0.1:54325 interrupted
+2017-09-08 13:46:20,461 (DataNode: [[[DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data3/, [DISK]file:/E:/IDEARFILE/apache-flume-1.7.0-src/flume-ng-sinks/flume-hdfs-sink/target/test/dfs/dfs/data/data4/]]  heartbeating to /127.0.0.1:54325) [WARN - org.apache.hadoop.hdfs.server.datanode.BPServiceActor.run(BPServiceActor.java:836)] Ending block pool service for: Block pool BP-397119027-192.168.6.122-1504849575276 (Datanode Uuid 9b2b004a-00e1-47b5-85ef-d7cf828804e8) service to /127.0.0.1:54325
+2017-09-08 13:46:20,476 (org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor@d1a10ac) [WARN - org.apache.hadoop.hdfs.server.blockmanagement.DecommissionManager$Monitor.run(DecommissionManager.java:78)] Monitor interrupted: java.lang.InterruptedException: sleep interrupted

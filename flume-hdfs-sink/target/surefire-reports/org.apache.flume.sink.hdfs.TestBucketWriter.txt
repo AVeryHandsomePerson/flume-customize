@@ -1,0 +1,25 @@
+-------------------------------------------------------------------------------
+Test set: org.apache.flume.sink.hdfs.TestBucketWriter
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 9.208 sec <<< FAILURE!
+testSequenceFileRenameRetries(org.apache.flume.sink.hdfs.TestBucketWriter)  Time elapsed: 85 sec  <<< ERROR!
+java.io.IOException: Mkdirs failed to create file:/tmp/flume-test.1504849490433.1/singleBucketfile:/tmp
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:438)
+	at org.apache.hadoop.fs.ChecksumFileSystem.create(ChecksumFileSystem.java:424)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:906)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:887)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:784)
+	at org.apache.hadoop.fs.FileSystem.create(FileSystem.java:773)
+	at org.apache.flume.sink.hdfs.MockFileSystem.create(MockFileSystem.java:69)
+	at org.apache.flume.sink.hdfs.HDFSDataStream.doOpen(HDFSDataStream.java:81)
+	at org.apache.flume.sink.hdfs.HDFSDataStream.open(HDFSDataStream.java:108)
+	at org.apache.flume.sink.hdfs.BucketWriter$1.call(BucketWriter.java:242)
+	at org.apache.flume.sink.hdfs.BucketWriter$1.call(BucketWriter.java:232)
+	at org.apache.flume.sink.hdfs.BucketWriter$9$1.run(BucketWriter.java:668)
+	at org.apache.flume.auth.SimpleAuthenticator.execute(SimpleAuthenticator.java:50)
+	at org.apache.flume.sink.hdfs.BucketWriter$9.call(BucketWriter.java:665)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+

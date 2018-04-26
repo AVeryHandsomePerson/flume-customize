@@ -1,0 +1,1 @@
+2017-09-08 13:46:21,152 (main) [DEBUG - org.apache.flume.sink.hdfs.SequenceFileSerializerFactory.getSerializer(SequenceFileSerializerFactory.java:48)] Not in enum, loading builder class: org.apache.flume.sink.hdfs.MyCustomSerializer$Builder
