@@ -48,41 +48,6 @@ public class EventInterceptor implements FilterDataInterceptor {
             }
             j++;
         }
-//        int j = 0;
-//        for (String srm : list) {
-//            if (fields.length == 0 ) {
-//                if (j == list.size() - 1 ) {
-//                    if(type[j].equals("3")){
-//                        SimpleDateFormat formats = new SimpleDateFormat(times[j]);
-//                        try {
-//                            Date time = formats.parse(srm);
-//                            String str = formats.format(time);
-//                            sb.append(str);
-//                        } catch (ParseException e) {
-//                            e.printStackTrace();
-//                        }
-//                    }else {
-//                        sb.append(srm);
-//                    }
-//                } else {
-//                    if(type[j].equals("3")){
-//                        SimpleDateFormat formats = new SimpleDateFormat(times[j]);
-//                        try {
-//                            Date time = formats.parse(srm);
-//                            String str = formats.format(time);
-//                            sb.append(str).append(ElasticInterceptorConfigurationConstants.FH);
-//                        } catch (ParseException e) {
-//                            e.printStackTrace();
-//                        }
-//                    }else {
-//                        sb.append(srm).append(ElasticInterceptorConfigurationConstants.FH);
-//                    }
-//                }
-//            } else{
-//                sb.append(srm).append(ElasticInterceptorConfigurationConstants.FH);
-//            }
-//            j++;
-//        }
         for (int i = 0; i < fields.length; i++) {
             if (!StringUtils.isEmpty(fields[i])) {
                 switch (ruleData[i]) {
@@ -176,6 +141,5 @@ public class EventInterceptor implements FilterDataInterceptor {
         System.out.println(s);
 
 
-//        System.out.println(sv);
     }
 }

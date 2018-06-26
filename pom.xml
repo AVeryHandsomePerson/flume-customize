@@ -46,6 +46,9 @@ limitations under the License.
     <module>flume-ng-hbase-sink</module>
     <module>flume-ng-elasticsearch-sink</module>
     <module>flume-ng-kafka-sink</module>
+    <module>flume-ng-gp-sink</module>
+    <module>flume-ng-mysql-sink</module>
+    <module>flume-ng-oracle-sink</module>
   </modules>
 
   <profiles>
